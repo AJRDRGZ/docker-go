@@ -11,14 +11,14 @@
 ### Crear contenedor
 
 ```bash
-mkdir -p ~/logs/go-docker
-docker run -d -p 2777:1919 -v ~/logs/go-docker:/app/logs docker-go
+mkdir -p ~/docker/volumes/go-docker
+docker run -d -p 2777:1919 -v ~/docker/volumes/go-docker:/app/logs docker-go
 ```
 
 ### local logs
 
 ```bash
-tail -f ~/logs/go-docker/trace.log
+tail -f ~/docker/volumes/go-docker/trace.log
 ```
 
 ### ejecutar myApp
